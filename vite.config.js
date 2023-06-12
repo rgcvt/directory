@@ -9,6 +9,9 @@ export default defineConfig({
 			scss: {},
 		},
 	},
+	define: {
+		'process.env': {},
+	},
 	plugins: [
 		vue({
 			reactivityTransform: true,
