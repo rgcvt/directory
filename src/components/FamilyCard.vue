@@ -29,6 +29,7 @@ const props = defineProps({
 			<img
 				v-if="family.fields.photo"
 				:src="`img/${family.fields.photo[0].local}`"
+				:alt="`${family.name} family photo`"
 			/>
 		</div>
 		<div class="family-contact-info">
