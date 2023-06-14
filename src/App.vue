@@ -4,6 +4,14 @@ import families from '../data/families.json';
 import FamilyCard from './components/FamilyCard.vue';
 import IconSearch from './icons/IconSearch.vue';
 const filteredFamilies = ref(families);
+const authenticated = ref(false);
+
+const login = (e) => {
+	const { password } = Object.fromEntries(new FormData(e.target));
+	if (password == 'georgiavt') {
+		authenticated.value = true;
+	}
+};
 
 const findValue = (e) => {
 	// get the search value;
@@ -21,7 +29,7 @@ const findValue = (e) => {
 </script>
 
 <template>
-	<div class="layout">
+	<div v-if="authenticated" class="layout">
 		<section class="family-search">
 			<label for="search">Search</label>
 			<div class="input-row">
@@ -38,6 +46,18 @@ const findValue = (e) => {
 		<section class="family-cards">
 			<FamilyCard v-for="family in filteredFamilies" :family="family" />
 		</section>
+	</div>
+	<div v-else>
+		<form name="login" @submit.prevent="login($event)" class="login-form">
+			<h2>Log In</h2>
+			<label
+				>Password
+				<div class="input-row">
+					<input type="password" name="password" autocomplete />
+					<button>Log In</button>
+				</div>
+			</label>
+		</form>
 	</div>
 </template>
 <style lang="scss" scoped>
@@ -67,5 +87,9 @@ const findValue = (e) => {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-md);
+}
+.login-form {
+	width: 14rem;
+	margin: 8rem auto;
 }
 </style>
