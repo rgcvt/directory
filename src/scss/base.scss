@@ -1,0 +1,27 @@
+:root {
+	font-size: 1rem;
+	--border-width: 1px;
+	--border-radius: 0;
+	--color-ui-muted: hsl(200, 7%, 90%);
+	--color-ui: hsl(200, 7%, 80%);
+	--color-ui-intense: hsl(200, 7%, 70%);
+	--space-xs: 0.5rem;
+	--font-sans: 'Soleil', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	--font-serif: 'DM Serif Text', Palatino, 'Palatino Linotype',
+		'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+
+	--color-link: #40aca1;
+	--color-link-hover: #006f66;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-ui-muted: hsl(220, 16%, 25%);
+		--color-ui: hsl(220, 16%, 35%);
+		--color-ui-intense: hsl(220, 16%, 45%);
+	}
+}
+body {
+	background-color: transparent;
+}

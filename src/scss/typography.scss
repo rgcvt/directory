@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'DM Serif Text';
+	src: url('/font/dm-serif.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: 'Soleil';
+	src: url('/font/soleil-400.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: 'Soleil';
+	src: local(''), url('/font/soleil-800.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+	font-display: auto;
+}
+
+h1,
+h2 {
+	font-family: var(--font-serif);
+	font-weight: 800;
+}

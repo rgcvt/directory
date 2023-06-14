@@ -25,7 +25,7 @@ const href = () => {
 </script>
 
 <template>
-	<a class="contact-link" :href="href()">
+	<a class="contact-link" :href="href()" target="_blank">
 		<div class="link-text-primary">{{ textPrimary }}</div>
 		<div class="link-text-secondary">
 			{{ textSecondary }}
@@ -33,4 +33,27 @@ const href = () => {
 	</a>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.contact-link {
+	color: var(--color-text-muted);
+	display: block;
+	font-weight: 400;
+	//margin: var(--space-xs) 0;
+	padding: var(--space-xs) 0.75rem;
+	//border-radius: var(--space-xs);
+	//background: var(--color-background);
+	border: var(--border-width) solid transparent;
+	&:hover {
+		color: var(--color-link-hover);
+		background: var(--color-background);
+		border-color: var(--color-ui-muted);
+	}
+}
+.link-text-primary {
+	font-size: 0.9rem;
+}
+.link-text-secondary {
+	font-size: 0.7rem;
+	opacity: 0.75;
+}
+</style>
