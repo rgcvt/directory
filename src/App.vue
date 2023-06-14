@@ -51,7 +51,7 @@ const findValue = (e) => {
 	z-index: 2;
 	background: linear-gradient(
 		to bottom,
-		var(--color-background-card) 60%,
+		var(--color-background-intense) 60%,
 		transparent
 	);
 	padding: var(--space-xs) 0;
@@ -66,6 +66,6 @@ const findValue = (e) => {
 .family-cards {
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-sm);
+	gap: var(--space-md);
 }
 </style>

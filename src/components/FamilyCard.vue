@@ -91,7 +91,7 @@ const props = defineProps({
 	//background: var(--color-background-card);
 	padding: var(--space-sm);
 	box-shadow: var(--shadow-elevation-low);
-	border: 1px solid var(--color-ui-muted);
+	border: 1px solid var(--color-ui);
 	//border-radius: 1.5rem;
 
 	display: grid;
