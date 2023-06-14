@@ -1,0 +1,24 @@
+{
+	"name": "RGC Directory",
+	"short_name": "RGC Directory",
+	"display": "fullscreen",
+	"scope": "/",
+	"start_url": "/index.html",
+	"background_color": "#445472",
+	"theme_color": "#445472",
+	"description": "We're a church that proclaims the grace of Jesus Christ that sets sinners free to serve the living God with wholehearted joy.",
+	"icons": [
+		{
+			"src": "/favicon/favicon-192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/favicon/favicon-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any maskable"
+		}
+	]
+}
